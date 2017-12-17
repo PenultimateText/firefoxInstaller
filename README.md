@@ -1,7 +1,11 @@
 # firefoxInstaller
 
-Used to install the latest version of firefox on CentOS
+Used to install the latest version of firefox on CentOS <br/>
+<br/>
+Script needs to be run with with root access for <br/>
+    1.) Unpacked Firefox.tar.bz2 in the /opt/ directory <br/>
+    2.) Add a .desktop file to /usr/share/applications/ for Firefox <br/>
 
-Script needs to be run with root access to access <br/>
-    1.) /opt/ where the FireFox package will be unpacked
-    2.) /usr/share/applications/ to add a .desktop file/Icon for FireFox
+'''
+curl -Ls https://raw.githubusercontent.com/PenultimateText/firefoxInstaller/master/firefoxInstaller.sh | sudo bash
+'''
