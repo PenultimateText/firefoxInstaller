@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $EUID -ne 0 ]]; then
-   echo "You must be run as root so it can access /opt/firefox/ and /usr/share/applications/"
+   echo "This script must be run as root so it can access /opt/firefox/ and /usr/share/applications/"
    exit 1
 fi
 
@@ -18,7 +18,7 @@ echo $ffDownload
 wget -O /tmp/FireFox.tar.bz2 $ffDownload
 rm -rf /opt/firefox
 tar xfj /tmp/FireFox.tar.bz2 -C /opt/
-rm-rf /tmp/FireFox.tar.bz2
+rm -rf /tmp/FireFox.tar.bz2
 
 sudo touch /usr/share/applications/firefox-quantum.desktop
 
